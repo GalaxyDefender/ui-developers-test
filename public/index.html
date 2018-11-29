@@ -7,33 +7,22 @@
     <title>Hodgepodge</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        jscript = function() { }
-        jscript.ui = function() { }
-        jscript.ui.alerts = new function() { }
-        jscript.ui.alerts.showErrorAlert = function() {
-            alert("An error occured");
-        }
-
-        jscript.ui.alerts.MessageDisplayer = function(inMsg) {
-            this.msg = inMsg;
-            this.toString = function() {
-                return "msg=" + this.msg;
-            }
-        }
-
-        function test() {
-            jscript.ui.alerts.showErrorAlert()
-            var v = new jscript.ui.alerts.MessageDisplayer("Hello!");
-            alert(v);
-        }
-    </script>
 </head>
 <body>
 
-    <h1>This is HodgePodge</h1>
-
-    <input type="button" value="Test Alert" onclick="test()">
+    <form action="#">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fName" placeholder="Please enter full name"> <br>
+        <label for="emailAddress">Email:</label>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="Please your e-mail address"><br>
+        <label for="Bday">Birthday:</label>
+        <input type="date" id="Bday" name="Bday"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password"><br>
+        <label for="confirmP">Confirm Password:</label>
+        <input type="password" id="confirmP" name="confirmP"><br>
+        <button>Submit</button>  
+    </form>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

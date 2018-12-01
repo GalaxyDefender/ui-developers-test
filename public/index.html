@@ -27,7 +27,7 @@
 
             <div class="form-label-group" ng-hide="myHide">
                 <label for="inputEmail">Email address *</label>
-                <span ng-show="!myForm.inputEmail.$untouched &&myForm.inputEmail.$invalid">Invalid email</span>
+                <span class="invalid" ng-show="!myForm.inputEmail.$untouched &&myForm.inputEmail.$invalid">Invalid email</span>
                 <input type="email" name="inputEmail" ng-model="inputEmail" class="form-control" placeholder="Email address" required>
             </div>
 

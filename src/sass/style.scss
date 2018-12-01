@@ -1,4 +1,4 @@
-$form-color : rgba(102, 146, 197, 0.4);
+$form-color : rgba(29, 104, 190, 0.4);
 $border-style : 5px solid black;
 $input-padding: 20px;
 $form-control-border: 1px solid rgb(172, 161, 161);
@@ -80,13 +80,18 @@ form {
     }
 }
 
+.invalid {
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+}
+
 .btn {
     border-radius: $form-control-radius;
     border: $form-control-border;
     background-color: rgb(31, 147, 182);
 
     &:hover {
-        background-color: rgb(48, 113, 133);
+        background-color: rgb(12, 51, 65);
     }
 }
 

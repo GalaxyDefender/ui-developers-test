@@ -21,25 +21,25 @@
 
             <div class="form-label-group" ng-hide="myHide">
                 <label for="inputName">Name *</label>
-                <!-- <span ng-show="myForm.inputName.$touched && myForm.inputName.$invalid">This field is required!</span> -->
+                <span class="valid"  ng-show="myForm.inputName.$dirty && myForm.inputName.$valid"><img src="img/check-3x.png" alt=""></span>
                 <input type="text" name="inputName" ng-model="inputName" class="form-control" placeholder="Name" required>
             </div>
 
             <div class="form-label-group" ng-hide="myHide">
                 <label for="inputEmail">Email address *</label>
-                <span class="invalid" ng-show="!myForm.inputEmail.$untouched &&myForm.inputEmail.$invalid">Invalid email</span>
+                <span class="valid"  ng-show="myForm.inputEmail.$dirty && myForm.inputEmail.$valid"><img src="img/check-3x.png" alt=""></span>
+                <span class="invalid" ng-show="!myForm.inputEmail.$untouched &&myForm.inputEmail.$invalid">Invalid input</span>
                 <input type="email" name="inputEmail" ng-model="inputEmail" class="form-control" placeholder="Email address" required>
             </div>
 
             <div class="form-label-group" ng-hide="myHide">
                 <label for="inputDate">Date of Birth</label>
-                <!-- <span ng-show="myForm.inputDate.$touched && myForm.inputDate.$invalid">This field is required!</span> -->
                 <input type="date" name="inputDate" ng-model="inputDate" class="form-control" placeholder="Email address">
             </div>
 
             <div class="form-label-group" ng-hide="myHide">
                 <label for="inputPassword">Password *</label>
-                <!-- <span ng-show="myForm.inputPassword.$touched && myForm.inputPassword.$invalid">This field is required!</span> -->
+                <span class="valid"  ng-show="myForm.inputPassword.$dirty && myForm.inputPassword.$valid"><img src="img/check-3x.png" alt=""></span>
                 <input type="password" name="inputPassword" ng-model="inputPassword" class="form-control" placeholder="Password" required>   
             </div>
 

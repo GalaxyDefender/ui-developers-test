@@ -83,6 +83,13 @@ form {
 .invalid {
     color:rgb(255, 0, 0);
     font-weight: bold;
+    float: right;
+}
+
+.valid {
+    position: relative;
+    float: right;
+    
 }
 
 .btn {

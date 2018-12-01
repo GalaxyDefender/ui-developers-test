@@ -1,9 +1,10 @@
-$form-color : rgba(0,22,122,0.4);
+$form-color : rgba(102, 146, 197, 0.4);
 $border-style : 5px solid black;
 $input-padding: 20px;
-$form-control-border: 1px solid red;
+$form-control-border: 1px solid rgb(172, 161, 161);
 $form-control-radius: 0px;
-$text-color: white;
+$form-control-shadow:-1px -2px 14px rgba(33, 44, 196, 0.4);
+$text-color: rgb(255, 255, 255);
 
 * {
     margin: 0px;
@@ -31,9 +32,22 @@ label {
 }
 
 form {
-    background-color: $form-color;
+    
     padding: 50px 120px;
-    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 10;
+    box-shadow: $form-control-shadow;
+}
+
+.child {
+    position: absolute;
+    background-color: $form-color;
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .form-control {
@@ -42,12 +56,22 @@ form {
     width: 280px;
 }
 
-.top {
-    border-top: $border-style;
-    padding-top: $input-padding;
+.btn {
+    border-radius: $form-control-radius;
+    border: $form-control-border;
+    background-color: rgb(31, 147, 182);
 }
 
-.bottom {
-    border-bottom: $border-style;
-    padding-bottom: $input-padding;
+.btn:hover {
+    background-color: rgb(48, 113, 133);
 }
+
+// .top {
+//     border-top: $border-style;
+//     padding-top: $input-padding;
+// }
+
+// .bottom {
+//     border-bottom: $border-style;
+//     padding-bottom: $input-padding;
+// }

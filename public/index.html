@@ -28,7 +28,7 @@
 
             <div class="form-label-group">
                 <label for="inputEmail">Email address *</label>
-                <!-- <span ng-show="myForm.inputEmail.$touched && myForm.inputEmail.$invalid">This field is required!</span> -->
+                <span ng-show="!myForm.inputEmail.$untouched &&myForm.inputEmail.$invalid">Must contain an email address</span>
                 <input type="email" name="inputEmail" ng-model="inputEmail" class="form-control" placeholder="Email address" required>
             </div>
 
@@ -51,9 +51,9 @@
             </div>
 
             <br>
-            <button class="btn btn-lg btn-primary btn-block" ng-click="myFunc()" type="submit" >Sign in</button>   
+            <button class="btn btn-lg btn-primary btn-block" ng-if="myForm.inputName.$valid && myForm.inputEmail.$valid && myForm.inputPassword.$valid && myForm.inputConfirm.$valid" ng-click="myFunc()" type="submit" ng-hide="myHide">Sign in</button>   
 
-            <p ng-show="myShow" ng-if="myForm.inputName.$valid">Thank you for filling in the form {{inputName}}!</p>
+            <!-- <p ng-show="myShow" ng-if="myForm.inputName.$valid">Thank you for filling in the form {{inputName}}!</p> -->
         </form>
     </div>
     

@@ -1,8 +1,9 @@
-$form-color : aquamarine;
+$form-color : rgba(0,22,122,0.4);
 $border-style : 5px solid black;
 $input-padding: 20px;
 $form-control-border: 1px solid red;
 $form-control-radius: 0px;
+$text-color: white;
 
 * {
     margin: 0px;
@@ -15,6 +16,7 @@ body {
     background-image: url("/img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: $text-color;
 }
 
 .grid-container {
@@ -29,8 +31,9 @@ label {
 }
 
 form {
-    // background-color: $form-color;
+    background-color: $form-color;
     padding: 50px 120px;
+    backdrop-filter: blur(10px);
 }
 
 .form-control {

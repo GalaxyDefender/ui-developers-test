@@ -90,12 +90,14 @@ form {
     }
 }
 
-// .top {
-//     border-top: $border-style;
-//     padding-top: $input-padding;
-// }
+@media screen and (max-width:650px) {
+    form {
+        padding: 50px 80px;
+    }
+}
 
-// .bottom {
-//     border-bottom: $border-style;
-//     padding-bottom: $input-padding;
-// }
+@media screen and (max-width:360px) {
+    form {
+        padding: 50px 20px;
+    }
+}

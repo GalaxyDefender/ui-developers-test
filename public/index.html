@@ -44,14 +44,8 @@
                 <input type="password" name="inputPassword" ng-model="inputPassword" class="form-control" placeholder="Password" required>   
             </div>
 
-            <div class="form-label-group" >
-                <label for="inputConfirm">Confirm Password *</label>
-                <!-- <span ng-show="myForm.inputConfirm.$touched && myForm.inputConfirm.$invalid">This field is required!</span> -->
-                <input type="password" name="inputConfirm" ng-model="inputConfirm" class="form-control" placeholder="Confirm Password" required>   
-            </div>
-
             <br>
-            <button class="btn btn-lg btn-primary btn-block" ng-if="myForm.inputName.$valid && myForm.inputEmail.$valid && myForm.inputPassword.$valid && myForm.inputConfirm.$valid" ng-click="myFunc()" type="submit" ng-hide="myHide">Sign in</button>   
+            <button class="btn btn-lg btn-primary btn-block" ng-if="myForm.inputName.$valid && myForm.inputEmail.$valid && myForm.inputPassword.$valid" ng-click="myFunc()" type="submit" ng-hide="myHide">Sign in</button>   
 
             <!-- <p ng-show="myShow" ng-if="myForm.inputName.$valid">Thank you for filling in the form {{inputName}}!</p> -->
         </form>

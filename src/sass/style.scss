@@ -1,3 +1,9 @@
+$form-color : aquamarine;
+$border-style : 5px solid black;
+$input-padding: 20px;
+$form-control-border: 1px solid red;
+$form-control-radius: 0px;
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,4 +23,25 @@ body {
 
 label {
     margin-right: 15px;
+}
+
+form {
+    // background-color: $form-color;
+    padding: 50px 120px;
+}
+
+.form-control {
+    border: $form-control-border;
+    border-radius: $form-control-radius;
+    width: 280px;
+}
+
+.top {
+    border-top: $border-style;
+    padding-top: $input-padding;
+}
+
+.bottom {
+    border-bottom: $border-style;
+    padding-bottom: $input-padding;
 }
